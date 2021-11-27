@@ -112,6 +112,8 @@ footer {
   background-color: #f2f2f2;
 }
 
-.trademark {
-  display: flex;
+div {
+  text-align: center;
+  font-weight: lighter;
+  color: #000000;
 }
