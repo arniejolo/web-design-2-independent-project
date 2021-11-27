@@ -22,7 +22,8 @@ main {
   grid-template-areas:
   "navigation"
   "banner"
-  "section"
+  "section1"
+  "section2"
   "footer"
 }
 
@@ -31,17 +32,7 @@ img {
   width: 100%;
   padding: 0;
   grid-area: banner;
-
   align-self: center;
-}
-
-
-@media only screen and (min-width: 38em) {
-
-  img {
-    width: 45%;
-    align-self: center;
-  }
 }
 
 nav {
@@ -59,30 +50,14 @@ header nav > ul {
   list-style-type: none;
 }
 
-section {
-  grid-area: section;
+.section1 {
+  grid-area: section1;
   padding: 1rem;
   margin: 2.5rem 0 0 0;
 }
 
-@media only screen and (min-width: 38em) {
-
-  section {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-article {
-  padding: 1.5rem;
-}
-
-article h3 {
-  padding: 0;
-  margin: 0;
-}
-footer {
-  grid-area: footer;
+.section2 {
+  grid-area: section2;
 }
 
 h1 {
@@ -92,33 +67,22 @@ h1 {
   color: #323996;
   font-family: 'Novecento Sans', sans-serif;
   text-align: center;
-  font-size: 8rem;
+  font-size: 2.5rem;
   line-height: normal;
 }
 
 h2 {
   padding: 0;
-  bottom-margin: 1.3rem;
+  margin: 0;
 
   color: #7c92ca;
   font-family: 'Novecento Sans', sans-serif;
   text-align: center;
-}
-
-article > h3 {
-  padding: 0 0 2rem 0;
-}
-
-article > h2 {
-  padding: 0 0 1rem 0;
-  margin: 0;
-
-  font-family: 'Novecento Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  padding: 0 0 2rem 0;
+  padding: 0;
   margin: 0;
   text-align: center;
   font-weight: lighter;
@@ -127,7 +91,7 @@ h3 {
 
 p {
   padding: 0;
-  bottom-margin: 1.3rem;
+  margin: 0;
   text-align: left;
 }
 
@@ -140,8 +104,7 @@ a {
   padding: 0 .5rem;
 }
 
-a:hover
-a:focus {
+ul li a:hover {
   color: #7c92ca;
 }
 
@@ -149,12 +112,6 @@ footer {
   background-color: #f2f2f2;
 }
 
-@media only screen and (min-width: 38em) {
-
-  html {
-    font-size: 110%;
-    line-height: 1.4;
-  }
-
-
+.trademark {
+  display: flex;
 }
