@@ -9,26 +9,41 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color: #f2f2f2;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
 
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-areas:
-  "header"
-  "section1"
-  "section2"
-  "footer"
 }
 
 main {
   padding: 1rem;
-}
 
+  display: grid;
+  grid-template-areas:
+  "section1"
+  "section2"
+  "footer"
+
+}
 
 img {
   width: 100%;
-  grid-area: banner;
   align-self: center;
 }
 
@@ -39,9 +54,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  grid-areas: header;
-
-
+  grid-area: header;
 }
 
 header nav > ul {
@@ -59,24 +72,16 @@ nav a {
 
 }
 
-main > .section1 {
+.section1 {
   grid-area: section1;
   padding: 1rem;
   margin: 2.5rem 0 0 0;
 }
 
-main > .section2 {
+.section2 {
   grid-area: section2;
 }
 
-.banner {
-  display: grid;
-}
- .banner img {
-   display: grid;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
- }
 h1 {
   padding: 0;
   margin: 0;
