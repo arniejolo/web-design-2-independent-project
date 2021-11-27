@@ -147,8 +147,5 @@ div {
 }
 
 .trademark {
-  tabindex="0";
-  font-weight: lighter;
-  font-size: 1rem;
-  color: #000000;
+  tabindex: "0";
 }
