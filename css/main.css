@@ -145,3 +145,10 @@ div {
   font-weight: lighter;
   color: #000000;
 }
+
+.trademark {
+  tabindex="0";
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #000000;
+}
