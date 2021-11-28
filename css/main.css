@@ -40,9 +40,9 @@ main {
 
   display: grid;
   grid-template-areas:
-  "section1"
-  "section2"
-  "footer"
+    "section1"
+    "section2"
+    "footer";
 }
 
 img {
