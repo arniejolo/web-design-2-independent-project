@@ -78,6 +78,9 @@ nav a {
   padding: 0 2rem;
 }
 
+main {
+  background-image: url(..."/images/gradient-1.jpg");
+}
 section ul {
   list-style-type: none;
   text-align: center;
@@ -152,13 +155,14 @@ header ul li {
 }
 
 div > ul > li {
-  padding: 1rem;
+  padding: .5rem;
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
 }
 
 div > ul > li a {
+  font-size: 1rem;
   color: #fff;
   background-color: #323996;
   border-radius: 3em;
@@ -192,6 +196,7 @@ div {
   font-weight: lighter;
   color: #000;
 }
+
 
 @media only screen and (min-width: 25em) {
 
@@ -229,18 +234,44 @@ div {
     margin: 0 0 1.4rem;
   }
 
-  section {
-    display: flex;
-    justify-content: center;
-
-    padding: 1rem;
+  #sectionabout1 > h1 {
+    margin: 0;
   }
 
-main {
-  grid
+#section2about > article > h3 {
+  text-align: center;
+  font-size: .85rem;
+}
+#section2about {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+}
+  #section2about > article {
+    padding: .5rem;
+    width: 30%;
+  }
+
+#khryslyne > img {
+  height: -10%;
 }
 
-  #big-logo {
+#section2about > article > p {
+  font-size: .80rem;
+  flex-grow: 1fr;
+}
+
+
+
+
+
+  #section1main {
+    display: flex;
+    justify-content: center;
+  }
+
+   #big-logo {
     width: 50%;
     height: 90%;
   }
