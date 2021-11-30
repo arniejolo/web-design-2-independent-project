@@ -3,9 +3,7 @@ html {
   line-height: 1.5;
   font-family: "Novecento Sans", sans-serif;
   font-family: "Joanna Sans Nova", sans-serif;
-  @viewport {width: device-width; scale: 1;}
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  @viewport {width: device-width; scale: 1;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -151,21 +149,21 @@ header ul li {
   text-transform: uppercase;
 }
 
-aside > article > ul > li {
+article > ul > li {
   padding: 1rem;
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
 }
 
-aside > article > ul > li a {
+article > ul > li a {
   color: #fff;
   background-color: #323996;
   border-radius: 3em;
   padding: .5em 1em .5em;
 }
 
-aside > article > ul > li a:hover {
+article > ul > li a:hover {
   color: #7c92ca
 }
 
@@ -238,6 +236,11 @@ main {
     justify-content: center;
 
     padding: 1rem;
+  }
+
+  main > .section1  {
+    padding: 1rem;
+  }
   }
 
   #big-logo {
