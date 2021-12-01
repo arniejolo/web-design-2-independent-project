@@ -15,7 +15,7 @@ html {
 }
 
 a:focus {
-  outline: 3px solid lightblue;
+  outline: 3px solid black;
 }
 
 .skip-links {
@@ -261,9 +261,6 @@ div {
 
   #section2about > article > img {
     flex-grow: 1;
-  }
-  #khryslyne > img {
-    height: -10%;
   }
 
   #section2about > article > p {
