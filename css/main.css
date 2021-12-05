@@ -382,7 +382,7 @@ div {
   #section2work > article > img {
     flex-grow: 1;
   }
-
+}
 
   @media only screen and (min-width: 90em) {
 
