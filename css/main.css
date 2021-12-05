@@ -159,7 +159,6 @@ div > ul > li {
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
-  text-align: center;
   font-weight: lighter;
   color: #000;
 }
@@ -267,7 +266,7 @@ footer {
   }
 
   #section2about > article > p {
-    font-size: .80rem;
+    font-size: .8rem;
     flex-grow: 1;
   }
 
@@ -303,7 +302,7 @@ footer {
     flex-grow: 1;
 
     margin: 0rem;
-    padding: .5rem;
+    padding: .5;
     width: 40%;
   }
 
