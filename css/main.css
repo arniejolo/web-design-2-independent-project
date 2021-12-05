@@ -73,6 +73,13 @@ header nav > ul {
   list-style-type: none;
 }
 
+header ul li {
+  padding: 0;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  text-transform: uppercase;
+}
+
 nav a {
   display: flex;
   padding: 0 2rem;
@@ -81,6 +88,7 @@ nav a {
 main {
   background-image: url(..."/images/gradient-1.jpg");
 }
+
 section ul {
   list-style-type: none;
   text-align: center;
@@ -89,14 +97,13 @@ section ul {
   margin: 0;
 }
 
-.section1 {
-  grid-area: section1;
-  padding: 1rem;
-  margin: 2.5rem 0 0;
+#section1main > img {
+  width: 80%;
 }
 
-.section2 {
-  grid-area: section2;
+#section1main {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -147,11 +154,9 @@ ul li a:hover {
   color: #7c92ca;
 }
 
-header ul li {
-  padding: 0;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
-  text-transform: uppercase;
+div {
+  display: flex;
+  justify-content: center;
 }
 
 div > ul > li {
@@ -161,12 +166,16 @@ div > ul > li {
   text-align: center;
 }
 
+div > ul {
+  padding: 0;
+}
+
 div > ul > li a {
   font-size: 1rem;
   color: #fff;
   background-color: #323996;
   border-radius: 3em;
-  padding: .5em 1em .5em;
+  padding: .3em 1em .3em;
 }
 
 div > ul > li a:hover {
@@ -245,12 +254,14 @@ div {
     text-align: center;
     font-size: .85rem;
   }
+
   #section2about {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: stretch;
   }
+
   #section2about > article {
     padding: .5rem;
     width: 30%;
@@ -276,15 +287,17 @@ div {
   #big-logo {
     width: 50%;
     height: 90%;
-
   }
 
   div {
-    margin: 2.5rem;
+    margin: .5rem .5rem 1.5rem .5rem;
+    padding: 0;
+    text-align: center;
   }
 
-  div > span {
-    margin: 2rem;
+  div > span > a {
+
+    margin: .3rem;
   }
 
   #section2work {
@@ -310,7 +323,7 @@ div {
   }
 
   #section2work > article > p {
-    font-size: .75rem;
+    font-size: .80rem;
     margin: 0 0 .5rem;
     padding: 0;
   }
@@ -318,4 +331,104 @@ div {
   #section2work > article > h2 {
     margin: 0 0 .5rem;
   }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+p {
+  font-size: 1rem;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 10rem;
+}
+
+#big-logo {
+  width: 25%;
+  height: 25%;
+}
+
+#section2work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#section2work > article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+
+  margin: 0rem;
+  padding: .5rem;
+  width: 40%;
+}
+
+#section2work > article > p {
+  font-size: .85rem;
+}
+
+#section2work > article > img {
+  flex-grow: 1;
+}
+
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 20rem;
+  }
+
+  #big-logo {
+    width: 25%;
+    height: 25%;
+  }
+
+  #section2work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #section2work > article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+
+    margin: 0rem;
+    padding: .5rem;
+    width: 25%;
+  }
+
+  #section2work > article > p {
+    font-size: .85rem;
+  }
+
+  #section2work > article > img {
+    flex-grow: 1;
+  }
+}
+}
 }
