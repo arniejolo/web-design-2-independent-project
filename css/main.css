@@ -3,9 +3,8 @@ html {
   line-height: 1.5;
   font-family: "Novecento Sans", sans-serif;
   font-family: "Joanna Sans Nova", sans-serif;
-  @viewport {width: device-width; scale: 1};
   -webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
