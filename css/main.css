@@ -43,9 +43,9 @@ main {
 
   display: grid;
   grid-template-areas:
-      "section1"
-      "section2"
-      "footer";
+        "section1"
+        "section2"
+        "footer";
 }
 
 img {
@@ -198,6 +198,7 @@ footer {
 #photography > img:hover, #publication > img:hover, #illustration > img:hover, #branding > img:hover {
   opacity: .5;
 }
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -321,6 +322,7 @@ footer {
   #section2work > article > h2 {
     margin: 0 0 .5rem;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
